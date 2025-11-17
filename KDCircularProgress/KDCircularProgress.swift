@@ -13,7 +13,7 @@ import UIKit
 
 @IBDesignable
 @objcMembers
-public class KDCircularProgress: UIView, CAAnimationDelegate {
+public class KDCircularProgress: UIView, @MainActor CAAnimationDelegate {
     private var progressLayer: KDCircularProgressViewLayer {
         get {
             return layer as! KDCircularProgressViewLayer
